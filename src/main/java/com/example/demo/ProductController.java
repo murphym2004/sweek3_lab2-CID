@@ -23,4 +23,8 @@ public class ProductController {
         mylist.add(myproduct);
         return myproduct;
     }
+    @GetMapping("/count")
+    public int getproductcount() {
+        return mylist.size();
+    }
 }
